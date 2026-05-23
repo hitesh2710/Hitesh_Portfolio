@@ -1,718 +1,492 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
-  <meta charset="utf-8">
-  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Hiteshwarm Dubey — Software Development Engineer</title>
+  <meta name="description" content="Hiteshwarm Dubey — Software Development Engineer at TradeCredit. Backend &amp; distributed systems engineer in Noida, India. Django, FastAPI, PostgreSQL, Redis." />
+  <meta name="theme-color" content="#0a0a0a" />
 
-  <title>Hiteshwarm Dubey Portfolio</title>
-  <meta content="" name="description">
-  <meta content="" name="keywords">
+  <link rel="icon" href="assets/img/portfolio.png" />
+  <link rel="apple-touch-icon" href="assets/img/apple-touch-icon.png" />
 
-  <!-- Favicons -->
-  <link href="assets/img/portfolio.png" rel="icon">
-  <link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon">
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght,SOFT@0,9..144,300..600,0..100;1,9..144,300..600,0..100&family=Geist:wght@300;400;500;600&family=JetBrains+Mono:wght@400;500&display=swap"
+    rel="stylesheet"
+  />
 
-  <!-- Vendor CSS Files -->
-  <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
-  <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
-  <link href="assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
-  <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
-
-  <!-- Template Main CSS File -->
-  <link href="assets/css/style.css" rel="stylesheet">
-
+  <link rel="stylesheet" href="assets/css/modern.css" />
 </head>
-
 <body>
 
-  <!-- ======= Header ======= -->
-  <header id="header" class="fixed-top">
-    <div class="container d-flex align-items-center justify-content-between">
+  <div class="scroll-progress" id="scrollProgress" aria-hidden="true"></div>
 
-      <h1 class="logo"><a href="index.html">Portfolio</a></h1>
+  <!-- ============================= NAV ============================= -->
+  <nav class="nav" aria-label="Primary">
+    <a href="#hero" class="nav-logo" aria-label="Hiteshwarm Dubey — Home">
+      <span class="diamond" aria-hidden="true"></span>
+      Hiteshwarm&nbsp;<em>Dubey</em>
+    </a>
 
-      <nav id="navbar" class="navbar">
-        <ul>
-          <li><a class="nav-link scrollto active" href="#hero">Home</a></li>
-          <li><a class="nav-link scrollto" href="#about">About</a></li>
-          <li><a class="nav-link scrollto" href="#skills">Skills</a></li>
-          <li><a class="nav-link scrollto" href="#services">Certificate</a></li>
-          <li><a class="nav-link scrollto" href="#code">Coding profile</a></li>
-          <li><a class="nav-link scrollto " href="#work">Achievement</a></li>
-          <li><a class="nav-link scrollto " href="#blog">Project</a></li>
-          <li><a class="nav-link scrollto" href="#contact">Contact</a></li>
-        </ul>
-        <i class="bi bi-list mobile-nav-toggle"></i>
-      </nav><!-- .navbar -->
+    <ul class="nav-links">
+      <li><a href="#about">About</a></li>
+      <li><a href="#experience">Work</a></li>
+      <li><a href="#skills">Stack</a></li>
+      <li><a href="#projects">Projects</a></li>
+      <li><a href="#stats">Stats</a></li>
+    </ul>
+
+    <a href="#contact" class="nav-cta">
+      Get in touch <span class="arrow" aria-hidden="true">↗</span>
+    </a>
+
+    <button class="mobile-toggle" aria-expanded="false" aria-controls="primary-nav">Menu</button>
+  </nav>
+
+  <!-- ============================= HERO ============================ -->
+  <header id="hero" class="hero">
+    <div class="hero-top">
+      <span class="status-pill">
+        <span class="dot" aria-hidden="true"></span>
+        Currently shipping at TradeCredit
+      </span>
+      <span class="section-label"><span class="index">00 /</span> Folio · 2026 ©</span>
     </div>
-  </header><!-- End Header -->
 
-  <!-- ======= Hero Section ======= -->
-  <div id="hero" class="hero route bg-image" style="background-image: url(assets/img/backimage.jpg)">
-    <div class="overlay-itro"></div>
-    <div class="hero-content display-table">
-      <div class="table-cell">
-        <div class="container">
-          <h1 class="hero-title mb-4">Hello!<br>I am Hiteshwarm Dubey</h1>
-          <p class="hero-subtitle"><span class="typed" data-typed-items="Software Engineer, Web Developer, Competitive Programmer"></span></p>
-        </div>
+    <div class="hero-stage">
+      <h1 class="hero-title">
+        <span class="line"><span>Hiteshwarm</span></span>
+        <span class="line">
+          <span>
+            <span class="rule" aria-hidden="true"></span><em>Dubey</em><span class="period">.</span>
+          </span>
+        </span>
+      </h1>
+    </div>
+
+    <div class="hero-meta-grid">
+      <div class="meta-cell">
+        <span class="num">01</span>
+        <span class="label">Role</span>
+        <span class="value">Software Development Engineer</span>
+      </div>
+      <div class="meta-cell">
+        <span class="num">02</span>
+        <span class="label">Based in</span>
+        <span class="value">Noida, India · UTC+5:30</span>
+      </div>
+      <div class="meta-cell">
+        <span class="num">03</span>
+        <span class="label">Focus</span>
+        <span class="value">Backend &amp; Distributed Systems</span>
+      </div>
+      <div class="meta-cell">
+        <span class="num">04</span>
+        <span class="label">Status</span>
+        <span class="value">Open to new opportunities</span>
       </div>
     </div>
-  </div><!-- End Hero Section -->
 
-  <main id="main">
+    <div class="marquee" aria-hidden="true">
+      <div class="marquee-track">
+        <span>Django</span><span class="dot">◆</span>
+        <span class="accent">FastAPI</span><span class="dot">◆</span>
+        <span>Python</span><span class="dot">◆</span>
+        <span class="accent">PostgreSQL</span><span class="dot">◆</span>
+        <span>Redis</span><span class="dot">◆</span>
+        <span class="accent">Celery</span><span class="dot">◆</span>
+        <span>AWS</span><span class="dot">◆</span>
+        <span class="accent">Docker</span><span class="dot">◆</span>
+        <span>Typesense</span><span class="dot">◆</span>
+        <span class="accent">React</span><span class="dot">◆</span>
+        <span>TypeScript</span><span class="dot">◆</span>
+      </div>
+    </div>
+  </header>
 
-    <!-- ======= About Section ======= -->
-    <section id="about" class="about-mf sect-pt4 route" >
-      <div class="container" style="background-color:#567fad">
-        <div class="row">
-          <div class="col-sm-12">
-            <div class="box-shadow-full">
-              <div class="row">
-                <div class="col-md-5">
-                  <div class="row">
-                    <div class="col-sm-6 col-md-7">
-                      <div class="about-img" style="display: flex; justify-content: center; align-items: center;">
-                        <img src="assets/img/hitesh.jpeg" style="border-radius: 50%; height: 180px;width: 180px;" alt="" >
-                      </div>
-                    </div>
-                  </div>
-                  <div class="skill-mf">
-                    <div class="about-info" >
-                      <p><span class="title-s">Name: </span> <span  style="color:#0078ff; ">Hiteshwarm Dubey</span></p>
-                      <p><span class="title-s">Profile: </span> <span  style="color:#0078ff; ">Associate Software Developer</span></p>
-                      <p><span class="title-s">Company: </span> <span  style="color:#0078ff; ">SecLogic</span></p>
-                      <p><span class="title-s">Email: </span> <span  style="color:#0078ff; ">anand2710dubey@gmail.com</span></p>
-                      <p><span class="title-s">Place: </span> <span  style="color:#0078ff; ">Noida, Uttar Pradesh-201309</span></p>
-                    </div>
-                  </div>
-                </div>
-                <div class="col-md-6">
-                  <div class="about-me pt-4 pt-md-0">
-                    <div class="title-box-2">
-                      <h5 class="title-left">
-                        About me
-                      </h5>
-                    </div>
-                    <p class="lead" style=" font-weight: bold"  >
-                      Hi, I'm Hiteshwarm Dubey!
-                      I'm a Full-Stack Developer passionate about building scalable, high-performance applications that deliver seamless user experiences. With expertise in Django, Express,js, Go, FastAPI, PostgreSQL, MongoDB, Redis, React, and Next.js, I architect efficient backend systems while creating dynamic, interactive frontends.
-                    </p>
-                    <p class="lead" style=" font-weight: bold">
-                      Currently, I work at Sec Logic as an Associate Software Developer, where I developed an AWS/GCP scan parsing system, reducing processing time by 40% for 1000+ daily scans. I also designed a rule-based exception handling system, cutting false positives by 25%, and optimized attack path analysis to enhance vulnerability detection accuracy by 20%.
-                     </p>
-                  </div>
-                </div>
+  <main>
+
+    <!-- ============================ ABOUT =========================== -->
+    <section id="about">
+      <div class="shell">
+        <div class="section-head reveal">
+          <h2>About &mdash; <em>the bio</em></h2>
+          <p class="aside">A backend-leaning full-stack engineer shipping production systems since 2024.</p>
+        </div>
+
+        <div class="about-grid reveal">
+          <aside class="about-pullquote" aria-label="Manifesto">
+            <span class="pq-label"><span class="num">&mdash;&mdash;</span> On craft</span>
+            <blockquote class="pq-text">
+              Backend by <em>trade</em>.<br />
+              Distributed systems<br />
+              by <em>obsession</em>.
+            </blockquote>
+            <div class="pq-rule" aria-hidden="true"></div>
+            <div class="pq-foot">
+              <span class="pq-sig">H. Dubey</span>
+              <span class="pq-loc">Noida &middot; 28.5°N, 77.3°E</span>
+            </div>
+          </aside>
+
+          <div class="about-body">
+            <p>
+              I&apos;m a <strong>Software Development Engineer at TradeCredit</strong>, engineering scheduled billing pipelines on Django Q that process <strong>500+</strong> daily transactions and cut P95 settlement latency by <strong>65%</strong> (8s&rarr;2.8s).
+            </p>
+            <p>
+              My work sits at the seam of distributed systems and product velocity &mdash; integrating KYC/eNACH vendor APIs into onboarding flows that automate <strong>5K+</strong> underwriting decisions a month, and shipping Typesense search with Apache Superset analytics across <strong>10K+</strong> daily records on AWS.
+            </p>
+            <p>
+              Previously at <strong>Sec Logic</strong>, I designed a scan-parsing platform handling <strong>1000+</strong> daily scans for <strong>50+</strong> enterprise clients, and reduced false-positive rates from <strong>35% to 15%</strong> through graph-based attack-path analysis. JSS Academy CSE &apos;24, CGPA <strong>8.66/10</strong>.
+            </p>
+
+            <div class="about-meta">
+              <div class="about-meta-cell">
+                <span class="label">Currently</span>
+                <span class="value">SDE @ TradeCredit</span>
+              </div>
+              <div class="about-meta-cell">
+                <span class="label">Education</span>
+                <span class="value">B.Tech CSE · JSS Academy</span>
+              </div>
+              <div class="about-meta-cell">
+                <span class="label">CGPA</span>
+                <span class="value">8.66 / 10.0</span>
+              </div>
+              <div class="about-meta-cell">
+                <span class="label">Location</span>
+                <span class="value">Noida, UP · IN</span>
               </div>
             </div>
           </div>
         </div>
       </div>
-    </section><!-- End About Section -->
+    </section>
 
-    <!-- ======= Skills Section ======= -->
-    <section id="skills" class="services-mf pt-5 route">
-      <div class="container">
-        <div class="row">
-          <div class="col-sm-12">
-            <div class="title-box text-center">
-              <h3 class="title-a">
-               Skills
-              </h3>
-              <p class="subtitle-a">
-                Skills Reflects Our Knowledge
+    <!-- ========================= EXPERIENCE ========================= -->
+    <section id="experience">
+      <div class="shell">
+        <div class="section-head reveal">
+          <h2>Selected <em>Work</em></h2>
+          <p class="aside">Three roles, shipped systems, real metrics. From intern to SDE in 18 months.</p>
+        </div>
+
+        <ol class="exp-list reveal">
+
+          <li class="exp-item">
+            <div class="exp-num">01</div>
+            <div class="exp-meta">
+              <span class="role">Software Development Engineer</span>
+              <h3 class="company"><em>TradeCredit</em></h3>
+            </div>
+            <ul class="exp-bullets">
+              <li>Engineered scheduled billing and repayment pipeline on Django Q automating bill generation, late-fee accrual, and delinquency tracking, processing <strong>500+</strong> daily transactions and cutting P95 settlement latency by <strong>65%</strong> (8s&rarr;2.8s).</li>
+              <li>Integrated <strong>HyperVerge</strong> (KYC + video-KYC + eSign) and <strong>Transbnk</strong> (eNACH mandate) vendor APIs with OAuth2/JWT auth and webhook callbacks into the buyer onboarding decisioning flow, automating underwriting for <strong>5K+</strong> applications/month with a <strong>70%</strong> drop in manual review effort.</li>
+              <li>Shipped Typesense full-text search and Apache Superset analytics with PostgreSQL materialized views, role-based access control across <strong>4</strong> user tiers, and Bigin CRM sync over <strong>10K+</strong> daily records, reducing dashboard query latency by <strong>60%</strong> (15s&rarr;6s) on Docker + AWS EC2.</li>
+            </ul>
+            <div class="exp-date">Jul 2025 <span class="sep">/</span> Present</div>
+          </li>
+
+          <li class="exp-item">
+            <div class="exp-num">02</div>
+            <div class="exp-meta">
+              <span class="role">Associate Software Developer</span>
+              <h3 class="company"><em>Sec Logic</em></h3>
+            </div>
+            <ul class="exp-bullets">
+              <li>Designed scalable scan-parsing platform for AWS/GCP handling <strong>1000+</strong> daily scans across <strong>50+</strong> enterprise clients, cutting pipeline latency by <strong>40%</strong> through parallel execution and optimized cloud storage patterns.</li>
+              <li>Architected distributed scan orchestration using Redis Streams with consumer groups and at-least-once delivery guarantees, achieving <strong>99.5%</strong> job completion rate with automatic failure recovery for enterprise workloads.</li>
+              <li>Reduced false-positive rate from <strong>35% to 15%</strong> via graph-based attack-path analysis with NetworkX across IAM roles and cloud resource dependencies in multi-account AWS and GCP environments.</li>
+            </ul>
+            <div class="exp-date">Aug 2024 <span class="sep">/</span> Jun 2025</div>
+          </li>
+
+          <li class="exp-item">
+            <div class="exp-num">03</div>
+            <div class="exp-meta">
+              <span class="role">Software Developer Intern</span>
+              <h3 class="company"><em>Sec Logic</em></h3>
+            </div>
+            <ul class="exp-bullets">
+              <li>Launched notification microservice with <strong>99.9%</strong> delivery reliability using Django REST Framework, supporting <strong>5K+</strong> daily notifications across email, Slack, and Google Chat with retry logic and dead-letter queuing.</li>
+              <li>Developed component library of <strong>40+</strong> reusable React.js modules using atomic design patterns, reducing feature development time by <strong>35%</strong> across <strong>3</strong> teams and improving UI consistency from <strong>68% to 91%</strong>.</li>
+              <li>Optimized PostgreSQL/MongoDB queries achieving <strong>3&times;</strong> performance improvement through strategic indexing, query plan analysis, and connection pooling for endpoints serving <strong>10K+</strong> requests/day.</li>
+            </ul>
+            <div class="exp-date">Apr 2024 <span class="sep">/</span> Jul 2024</div>
+          </li>
+
+        </ol>
+      </div>
+    </section>
+
+    <!-- =========================== SKILLS =========================== -->
+    <section id="skills">
+      <div class="shell">
+        <div class="section-head reveal">
+          <h2><em>Stack</em> &mdash; what I build with</h2>
+          <p class="aside">A working toolkit, grouped by where it shows up in the system.</p>
+        </div>
+
+        <div class="skills-grid reveal">
+
+          <div class="skill-row">
+            <div class="skill-cat"><span class="num">01</span> Languages</div>
+            <div class="skill-tags">
+              <span class="skill-tag">Python</span>
+              <span class="skill-tag">TypeScript</span>
+              <span class="skill-tag">JavaScript</span>
+              <span class="skill-tag">C / C++</span>
+              <span class="skill-tag">SQL</span>
+            </div>
+          </div>
+
+          <div class="skill-row">
+            <div class="skill-cat"><span class="num">02</span> Backend</div>
+            <div class="skill-tags">
+              <span class="skill-tag">Django</span>
+              <span class="skill-tag">Django REST</span>
+              <span class="skill-tag">FastAPI</span>
+              <span class="skill-tag">Node.js</span>
+              <span class="skill-tag">Express.js</span>
+              <span class="skill-tag">Celery</span>
+              <span class="skill-tag">Django Q</span>
+              <span class="skill-tag">OAuth2 / JWT</span>
+            </div>
+          </div>
+
+          <div class="skill-row">
+            <div class="skill-cat"><span class="num">03</span> Frontend</div>
+            <div class="skill-tags">
+              <span class="skill-tag">React</span>
+              <span class="skill-tag">Next.js</span>
+              <span class="skill-tag">Tailwind CSS</span>
+              <span class="skill-tag">HTML5</span>
+              <span class="skill-tag">CSS3</span>
+            </div>
+          </div>
+
+          <div class="skill-row">
+            <div class="skill-cat"><span class="num">04</span> Data &amp; Search</div>
+            <div class="skill-tags">
+              <span class="skill-tag">PostgreSQL</span>
+              <span class="skill-tag">MongoDB</span>
+              <span class="skill-tag">Redis</span>
+              <span class="skill-tag">Typesense</span>
+              <span class="skill-tag">ChromaDB</span>
+              <span class="skill-tag">DynamoDB</span>
+            </div>
+          </div>
+
+          <div class="skill-row">
+            <div class="skill-cat"><span class="num">05</span> DevOps &amp; Cloud</div>
+            <div class="skill-tags">
+              <span class="skill-tag">AWS · EC2 · S3 · Lambda · RDS</span>
+              <span class="skill-tag">Docker</span>
+              <span class="skill-tag">GitHub Actions</span>
+              <span class="skill-tag">CI / CD</span>
+              <span class="skill-tag">Prometheus</span>
+              <span class="skill-tag">Grafana</span>
+              <span class="skill-tag">Apache Superset</span>
+            </div>
+          </div>
+
+          <div class="skill-row">
+            <div class="skill-cat"><span class="num">06</span> Systems</div>
+            <div class="skill-tags">
+              <span class="skill-tag">Microservices</span>
+              <span class="skill-tag">Event-Driven Arch</span>
+              <span class="skill-tag">REST APIs</span>
+              <span class="skill-tag">WebSockets</span>
+              <span class="skill-tag">Distributed Systems</span>
+              <span class="skill-tag">Caching</span>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ========================== PROJECTS ========================== -->
+    <section id="projects">
+      <div class="shell">
+        <div class="section-head reveal">
+          <h2>Selected <em>Projects</em></h2>
+          <p class="aside">Two side projects I&apos;d happily get into the weeds about over a call.</p>
+        </div>
+
+        <div class="proj-list">
+
+          <article class="proj-item reveal">
+            <a class="proj-img-wrap" href="https://real-time-video-two.vercel.app/" target="_blank" rel="noopener">
+              <span class="proj-tag">Live</span>
+              <img src="assets/vid.jpg" alt="VidSphere video collaboration platform screenshot" />
+            </a>
+            <div class="proj-content">
+              <span class="proj-num">No. 01 · Dec 2024</span>
+              <h3 class="proj-title">Vid<em>Sphere</em>.</h3>
+              <p class="proj-stack">Express.js · Next.js · Electron.js · AWS S3 · Neon Postgres · Socket.io · Clerk</p>
+              <p class="proj-desc">
+                A <strong>video collaboration platform</strong> with 1080p streaming for concurrent users. AWS S3 + CloudFront CDN for delivery, Clerk auth, an Electron desktop recorder, and Stripe payments with usage-based billing.
               </p>
-              <div class="line-mf"></div>
+              <div class="proj-links">
+                <a class="proj-link" href="https://real-time-video-two.vercel.app/" target="_blank" rel="noopener">Website <span class="arrow">↗</span></a>
+                <a class="proj-link" href="https://rt-socket-io.onrender.com/" target="_blank" rel="noopener">Socket <span class="arrow">↗</span></a>
+                <a class="proj-link" href="https://github.com/hitesh2710/RealTime-Video-" target="_blank" rel="noopener">GitHub <span class="arrow">↗</span></a>
+              </div>
             </div>
-          </div>
+          </article>
+
+          <article class="proj-item reveal">
+            <a class="proj-img-wrap" href="https://github.com/hitesh2710/codebase" target="_blank" rel="noopener">
+              <span class="proj-tag">New</span>
+              <img src="assets/img/data.png" alt="AI-powered codebase Q&A system illustration" />
+            </a>
+            <div class="proj-content">
+              <span class="proj-num">No. 02 · Dec 2025</span>
+              <h3 class="proj-title">Codebase <em>Q&amp;A</em>.</h3>
+              <p class="proj-stack">Django · React · ChromaDB · Ollama · Redis · Celery · WebSocket · Tree-sitter</p>
+              <p class="proj-desc">
+                <strong>RAG-powered codebase search</strong> combining semantic embeddings (ChromaDB) with BM25 keyword matching via Reciprocal Rank Fusion and cross-encoder re-ranking. Python/JS/TS parsing through Tree-sitter, real-time streaming chat over Django Channels with Celery + Redis for async processing.
+              </p>
+              <div class="proj-links">
+                <a class="proj-link" href="https://github.com/hitesh2710/codebase" target="_blank" rel="noopener">GitHub <span class="arrow">↗</span></a>
+              </div>
+            </div>
+          </article>
+
         </div>
-        <div class="row">
-          <div class="col-md-2">
-            <div class="service-box">
-              <div class="service-ico">
-                <span class="ico-circle"><img src="./assets/img/django-icon.svg"  alt="HTML5 Icon" style="width:65px;height:65px;"></span>
-              </div>
-            </div> 
-          </div>
-          <div class="col-md-2">
-            <div class="service-box">
-              <div class="service-ico">
-                <span class="ico-circle"><img src="./assets/img/cpp.png"  alt="HTML5 Icon" style="width:65px;height:65px;"></span>
-              </div>
-            </div> 
-          </div>
-      
-          <div class="col-md-2">
-            <div class="service-box">
-              <div class="service-ico">
-                <span class="ico-circle"><img src="./assets/img/go.png"  alt="HTML5 Icon" style="width:65px;height:65px;"></span>
-              </div>
-            </div> 
-          </div>
-          <div class="col-md-2">
-            <div class="service-box">
-              <div class="service-ico">
-                <span class="ico-circle"><img src="./assets/img/javascript.png"  alt="HTML5 Icon" style="width:65px;height:65px;"></span>
-              </div>
-            </div> 
-          </div>
-          <div class="col-md-2">
-            <div class="service-box">
-              <div class="service-ico">
-                <span class="ico-circle"><img src="./assets/img/react.png"  alt="HTML5 Icon" style="width:65px;height:65px;"></span>
-              </div>
-            </div> 
-          </div>
-          <div class="col-md-2">
-            <div class="service-box">
-              <div class="service-ico">
-                <span class="ico-circle"><img src="./assets/img/node_js.png"  alt="HTML5 Icon" style="width:65px;height:65px;"></span>
-              </div>
-            </div> 
-          </div>
-          <div class="col-md-2">
-            <div class="service-box">
-              <div class="service-ico">
-                <span class="ico-circle"><img src="./assets/img/express_js.avif"  alt="HTML5 Icon" style="width:65px;height:65px;"></span>
-              </div>
-            </div> 
-          </div>
-          <div class="col-md-2">
-            <div class="service-box">
-              <div class="service-ico">
-                <span class="ico-circle"><img src="./assets/img/mongodb.png"  alt="HTML5 Icon" style="width:65px;height:65px;"></span>
-              </div>
-            </div> 
-          </div>
-          <div class="col-md-2">
-            <div class="service-box">
-              <div class="service-ico">
-                <span class="ico-circle"><img src="./assets/img/restful_api.png"  alt="HTML5 Icon" style="width:65px;height:65px;"></span>
-              </div>
-            </div> 
-          </div>
-          <div class="col-md-2">
-            <div class="service-box">
-              <div class="service-ico">
-                <span class="ico-circle"><img src="./assets/img/git.png"  alt="HTML5 Icon" style="width:65px;height:65px;"></span>
-              </div>
-            </div> 
-          </div>
-          <div class="col-md-2">
-            <div class="service-box">
-              <div class="service-ico">
-                <span class="ico-circle"><img src="./assets/img/data-structure.png"  alt="HTML5 Icon" style="width:65px;height:65px;"></span>
-              </div>
-            </div> 
-          </div>
-          <div class="col-md-2">
-            <div class="service-box">
-              <div class="service-ico">
-                <span class="ico-circle"><img src="./assets/img/sql.png"  alt="HTML5 Icon" style="width:65px;height:65px;"></span>
-              </div>
-            </div> 
-          </div>
-         </div>
-         
       </div>
-    </section><!-- End Skills Section -->
+    </section>
 
-    <!-- ======= Certificate Section ======= -->
-    <section id="services" class="services-mf pt-5 route">
-      <div class="container">
-        <div class="row">
-          <div class="col-sm-12">
-            <div class="title-box text-center">
-              <h3 class="title-a">
-                Certificate
-              </h3>
-              <div class="line-mf"></div>
-            </div>
+    <!-- ====================== STATS / ACHIEVEMENTS ==================== -->
+    <section id="stats" class="stats-section">
+      <div class="shell">
+        <div class="section-head reveal">
+          <h2>Competitive <em>Stats</em></h2>
+          <p class="aside">A decade of contest programming compressed into three numbers.</p>
+        </div>
+
+        <div class="stats-grid reveal">
+
+          <div class="stat-cell">
+            <span class="stat-num">01</span>
+            <span class="stat-label">LeetCode</span>
+            <span class="stat-value">2<em>0</em>23</span>
+            <span class="stat-sub">
+              Knight · top 2% globally ·
+              <a href="https://leetcode.com/u/hitesh_2710/" target="_blank" rel="noopener">@hitesh_2710</a>
+            </span>
+          </div>
+
+          <div class="stat-cell">
+            <span class="stat-num">02</span>
+            <span class="stat-label">CodeForces</span>
+            <span class="stat-value">15<em>44</em></span>
+            <span class="stat-sub">
+              Specialist · Global rank 244 (R912 D3) ·
+              <a href="https://codeforces.com/profile/hiteshdubey2701" target="_blank" rel="noopener">@hiteshdubey2701</a>
+            </span>
+          </div>
+
+          <div class="stat-cell">
+            <span class="stat-num">03</span>
+            <span class="stat-label">CodeChef</span>
+            <span class="stat-value">19<em>62</em></span>
+            <span class="stat-sub">
+              4&starf; · Global rank 67 (Starters 116 D2) ·
+              <a href="https://www.codechef.com/users/idealcoder" target="_blank" rel="noopener">@idealcoder</a>
+            </span>
+          </div>
+
+        </div>
+
+        <div class="ach-list reveal">
+          <div class="ach-item">
+            <span class="num">01 / Achievement</span>
+            <h3>ACM-ICPC Regionalist 2021</h3>
+            <p>Qualified for the ICPC Regional held at IIIT Gwalior.</p>
+          </div>
+          <div class="ach-item">
+            <span class="num">02 / Achievement</span>
+            <h3>ACM-ICPC Regionalist 2022</h3>
+            <p>Qualified for the Mathura-Kanpur Regional Contest.</p>
+          </div>
+          <div class="ach-item">
+            <span class="num">03 / Achievement</span>
+            <h3>Coding Ninja Codekaze 2023</h3>
+            <p>Achieved AIR 1503 in the Coding Ninja Codekaze 2023.</p>
           </div>
         </div>
-        <div class="row">
-          <div class="col-md-6">
-            <div class="service-box">
-              <div class="helper">
-              <div class="service-ico">
-                <span><img src="./assets/img/icpc.png"  alt="HTML5 Icon" style="width:65px;height:65px;"></span>
-              </div>
-              <div class="service-content">
-                <h2 class="s-title">The 2022 ICPC First Round Online Programming Contest</h2>
-                <p class="s-description text-center">
-                 ICPC online contest enhanced problem-solving, time management, teamwork, coding efficiency, adaptability, stress management, learning from mistakes, and global perspective skills.
-                </p>
-                <a href="https://drive.google.com/file/d/1EknG1Cv6nbcCigu42iZx73ZOu2VtzaES/view?usp=drive_link">
-                  <button type="button" class="btn btn-outline-primary">Certificate Link</button>
-                </a>
-              </div>
-            </div>
-            </div>
-          </div>
-          <div class="col-md-6">
-            <div class="service-box">
-              <div class="helper">
-              <div class="service-ico">
-                <span><img src="./assets/img/icpc.png"  alt="HTML5 Icon" style="width:65px;height:65px;"></span>
-              </div>
-              <div class="service-content">
-                <h2 class="s-title">The 2022 ICPC Mathura Kanpur Regional Contest</h2>
-                <p class="s-description text-center">
-                 ICPC regional contest offered exhilarating challenges, fostering teamwork, enhancing problem-solving skills, while global interactions provided diverse perspectives on programming strategies.
-                </p>
-                <a href="https://drive.google.com/file/d/1SRw0JSdFdotgk25u0fNIEmxb2xbWlJyW/view?usp=drive_link">
-                  <button type="button" class="btn btn-outline-primary" >Certificate Link</button>
-                </a>
-              </div>
-            </div>
-            </div>
-          </div>
-         
       </div>
-    </section><!-- End Certificate Section -->
+    </section>
 
-    <!-- ======= Counter Section ======= -->
-    <div id="code">
-    <div class="col-sm-12">
-      <div class="title-box text-center">
-        <h3 class="title-a">
-          Coding profile
-        </h3>
-        <div class="line-mf"></div>
-      </div>
-    </div>
-  </div>
-    <div class="section-counter paralax-mf bg-image" style="background-image: url(assets/img/counters-bg.jpg)">
-      <div class="overlay-mf"></div>
-      <div class="container position-relative">
-        <div class="row">
-          <div class="col-sm-4 col-lg-4">
-            <div class="counter-box counter-box pt-4 pt-md-0">
-              <div class="counter-ico">
-                <span class="ico-circle"> <a href="https://leetcode.com/u/hitesh_2710/" target="_blank">
-                  <img alt="Qries" src="./assets/img/leetcode.png"
-                  width="50" height="50" style="border-radius : 30px; "></a></span>
-                
-              </div>
-           
-            
-              <div class="counter-num">
-                <span class="counter-text">LEETCODE</span>
-              </div>
-            </div>
-          </div>
-          <div class="col-sm-4 col-lg-4">
-            <div class="counter-box counter-box pt-4 pt-md-0">
-              <div class="counter-ico">
-                <span class="ico-circle"> <a href="https://codeforces.com/profile/hiteshdubey2701" target="_blank">
-                  <img alt="Qries" src="./assets/img/codeforces.png"
-                  width="50" height="50" style="border-radius : 30px; "></a></span>
-                
-              </div>
-            
-              <div class="counter-num">
-                <span class="counter-text">CODEFORCES</span>
-              </div>
-            </div>
-          </div>
-          <div class="col-sm-4 col-lg-4">
-            <div class="counter-box counter-box pt-4 pt-md-0">
-              <div class="counter-ico">
-                <span class="ico-circle"> <a href="https://www.codechef.com/users/idealcoder" target="_blank">
-                  <img alt="Qries" src="./assets/img/codchef.jpeg"
-                  width="50" height="50" style="border-radius : 30px; "></a></span>
-                
-              </div>
-            
-              <div class="counter-num">
-                <span class="counter-text">CODECHEF</span>
-              </div>
-            </div>
-          </div>
-        </div>
-    </div><!-- End Counter Section -->
-  </div>
+    <!-- =========================== CONTACT ========================== -->
+    <section id="contact" class="contact">
+      <div class="shell">
 
-    
+        <p class="section-label reveal"><span class="index">06 /</span> Contact</p>
 
-    <!-- ======= Achievement Section ======= -->
-    <section id="work" class="portfolio-mf sect-pt4 route">
-      <div class="container">
-        <div class="row">
-          <div class="col-sm-12">
-            <div class="title-box text-center">
-              <h3 class="title-a">
-                Achievement
-              </h3>
-              <div class="line-mf"></div>
-            </div>
+        <h2 class="contact-mega reveal">
+          Let&apos;s build<br />
+          <em>something</em>.
+        </h2>
+
+        <div class="contact-grid reveal">
+
+          <div class="contact-cell">
+            <span class="num">01</span>
+            <span class="label">Email</span>
+            <p class="value">
+              <a href="mailto:dubey.hiteshwarm@gmail.com">dubey.hiteshwarm@gmail.com</a>
+            </p>
           </div>
-        </div>
-        <div class="row">
-       
-          <div class="col-md-4">
-            <div class="work-box">
-              <a href="assets/img/codeforces_hitesh.png" data-gallery="portfolioGallery" class="portfolio-lightbox">
-                <div class="work-img">
-                  <img src="assets/img/codeforces_hitesh.png" alt="" class="img-fluid" style="width: 356px;height: 199.23px">
-                </div>
+
+          <div class="contact-cell">
+            <span class="num">02</span>
+            <span class="label">Phone</span>
+            <p class="value">
+              <a href="tel:+919310547634">+91 93105 47634</a>
+            </p>
+          </div>
+
+          <div class="contact-cell">
+            <span class="num">03</span>
+            <span class="label">Location</span>
+            <p class="value">
+              Noida, Uttar Pradesh<br />India · UTC+5:30
+            </p>
+          </div>
+
+          <div class="contact-cell">
+            <span class="num">04</span>
+            <span class="label">Find me</span>
+            <div class="socials">
+              <a href="https://www.linkedin.com/in/hiteshwarm-dubey/" target="_blank" rel="noopener">
+                <span>LinkedIn</span><span class="arrow">↗</span>
               </a>
-              <div class="work-content">
-                <div class="row">
-                  <div class="col-sm-8">
-                    <h2 class="w-title">CF(Rating 1544)</h2>
-                    <div class="w-more">
-                      <span class="w-date">CodeForces Specialist. Achieved Global rank 244 in Codeforces Round 912 Division 3.</span>
-                    </div>
-                  </div>
-                  <div class="col-sm-4">
-                    <div class="w-like">
-                      <a href="https://codeforces.com/profile/hiteshdubey2701"> <span class="bi bi-plus-circle"></span></a>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="col-md-4">
-            <div class="work-box">
-              <a href="assets/img/leetcode_hitesh.png" data-gallery="portfolioGallery" class="portfolio-lightbox">
-                <div class="work-img">
-                  <img src="assets/img/leetcode_hitesh.png" alt="" class="img-fluid" style="width: 356px;height: 199.23px">
-                </div>
+              <a href="https://github.com/hitesh2710" target="_blank" rel="noopener">
+                <span>GitHub</span><span class="arrow">↗</span>
               </a>
-              <div class="work-content">
-                <div class="row">
-                  <div class="col-sm-8">
-                    <h2 class="w-title">Leetcode (Rating 1969)</h2>
-                    <div class="w-more">
-                      <span class="w-date">Leetcode Knight. Achieved Global rank 536 in LeetCode Weekly Contest 348.</span>
-                    </div>
-                  </div>
-                  <div class="col-sm-4">
-                    <div class="w-like">
-                      <a href="https://leetcode.com/u/hitesh_2710/"> <span class="bi bi-plus-circle"></span></a>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="col-md-4">
-            <div class="work-box">
-              <a href="assets/img/codechef_hitesh.png" data-gallery="portfolioGallery" class="portfolio-lightbox">
-                <div class="work-img">
-                  <img src="assets/img/codechef_hitesh.png" alt="" class="img-fluid" style="width: 356px;height: 199.23px">
-                </div>
+              <a href="https://leetcode.com/u/hitesh_2710/" target="_blank" rel="noopener">
+                <span>LeetCode</span><span class="arrow">↗</span>
               </a>
-              <div class="work-content">
-                <div class="row">
-                  <div class="col-sm-8">
-                    <h2 class="w-title">CodeChef (Rating 1898)</h2>
-                    <div class="w-more">
-                      <span class="w-date">CodeChef 4 star. Achieved Global rank 67 in CodeChef Starters 116 Division 2.</span>
-                    </div>
-                  </div>
-                  <div class="col-sm-4">
-                    <div class="w-like">
-                      <a href="https://www.codechef.com/users/idealcoder"> <span class="bi bi-plus-circle"></span></a>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-
-          <div class="col-md-4">
-            <div class="work-box">
-              <a href="assets/img/icpc.png" data-gallery="portfolioGallery" class="portfolio-lightbox">
-                <div class="work-img">
-                  <img src="assets/img/icpc.png" alt="" class="img-fluid" style="width: 356px;height: 199.23px">
-                </div>
-              </a>
-              <div class="work-content">
-                <div class="row">
-                  <div class="col-sm-8">
-                    <h2 class="w-title">ICPC Regionalist 2021</h2>
-                    <div class="w-more">
-                      <span class="w-date">Qualified for ICPC Regionals held at IIIT Gwalior.</span>
-                    </div>
-                  </div>
-                  <div class="col-sm-4">
-                    <div class="w-like">
-                      <a href="#"> <span class="bi bi-plus-circle"></span></a>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="col-md-4">
-            <div class="work-box">
-              <a href="assets/img/icpc.png" data-gallery="portfolioGallery" class="portfolio-lightbox">
-                <div class="work-img">
-                  <img src="assets/img/icpc.png" alt="" class="img-fluid" style="width: 356px;height: 199.23px">
-                </div>
-              </a>
-              <div class="work-content">
-                <div class="row">
-                  <div class="col-sm-8">
-                    <h2 class="w-title">ICPC Regionalist 2022</h2>
-                    <div class="w-more">
-                      <span class="w-date">Qualified for ICPC Regionals held at Mathura.</span>
-                    </div>
-                  </div>
-                  <div class="col-sm-4">
-                    <div class="w-like">
-                      <a href="https://drive.google.com/file/d/1SRw0JSdFdotgk25u0fNIEmxb2xbWlJyW/view?usp=drive_link"> <span class="bi bi-plus-circle"></span></a>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="col-md-4">
-            <div class="work-box">
-              <a href="assets/img/cn.png" data-gallery="portfolioGallery" class="portfolio-lightbox">
-                <div class="work-img">
-                  <img src="assets/img/cn.png" alt="" class="img-fluid" style="width: 356px;height: 199.23px">
-                </div>
-              </a>
-              <div class="work-content">
-                <div class="row">
-                  <div class="col-sm-8">
-                    <h2 class="w-title">Coding Ninja 2023</h2>
-                    <div class="w-more">
-                      <span class="w-date">Achieved AIR 1503 in Coding Ninja Codekaze 2023.</span>
-                    </div>
-                  </div>
-                  <div class="col-sm-4">
-                    <div class="w-like">
-                      <a href="https://drive.google.com/file/d/1bOmhQUPIbobcm0odimj4xAaP--CyhtIo/view?usp=sharing"> <span class="bi bi-plus-circle"></span></a>
-                    </div>
-                  </div>
-                </div>
-              </div>
             </div>
           </div>
 
         </div>
+
+        <footer class="site-footer">
+          <span>&copy; 2026 Hiteshwarm Dubey <span class="dot">◆</span> All rights reserved</span>
+          <span>Built with care <span class="dot">◆</span> No templates were harmed</span>
+        </footer>
+
       </div>
-    </section><!-- End Achievement Section -->
+    </section>
 
+  </main>
 
-    <!-- ======= Blog Section ======= -->
-    <section id="blog" class="blog-mf sect-pt4 route">
-      <div class="container">
-        <div class="row">
-          <div class="col-sm-12">
-            <div class="title-box text-center">
-              <h3 class="title-a">
-                Project
-              </h3>
-              
-              <div class="line-mf"></div>
-            </div>
-          </div>
-        </div>
-        <div class="row">
-          <div class="col-md-4">
-            <div class="card card-blog">
-              <div class="card-img">
-                <a href="https://real-time-video-two.vercel.app/"><img src="assets/vid.jpg" alt="" class="img-fluid" style="width: 100%;height: 200px;"></a>
-              </div>
-              <div class="card-body">
-                <div class="card-category-box">
-                  <div class="card-category">
-                    <a href="https://real-time-video-two.vercel.app/"> <h6 class="category">VidSphere</h6></a>
-                  </div>
-                </div>
-                <h3 class="card-title"><a href="https://github.com/hitesh2710/RealTime-Video-"><b>Next.js, Express.js, Electron.js, S3, Neon Postgres, Socket.io</b></a></h3>
-                <p class="card-description">
-                  Built a scalable video platform with 1080p streaming, AI transcription, real-time workspaces for 500+ users, secure AWS S3 storage, Clerk authentication, and a Stripe-powered subscription system.
-                </p>
-              </div>
-              <div class="card-footer">
-                <div class="post-author">
-                  <a href="#">
-                    <img src="assets/img/hitesh.jpeg" alt="" class="avatar rounded-circle">
-                    <span class="author">Hiteshwarm Dubey</span>
-                  </a>
-                </div>
-                
-              </div>
-            </div>
-          </div>
-          <div class="col-md-4">
-            <div class="card card-blog">
-              <div class="card-img">
-                <a href="https://shopbuzz.onrender.com/"><img src="assets/img/shopbuzz.png" alt="" class="img-fluid" style="width: 100%;height: 200px;"></a>
-              </div>
-              <div class="card-body">
-                <div class="card-category-box">
-                  <div class="card-category">
-                    <a href="https://shopbuzz.onrender.com/"> <h6 class="category">ShopBuzz</h6></a>
-                  </div>
-                </div>
-                <h3 class="card-title"><a href="https://github.com/hitesh2710/ShopBuzz"><b>React, Node js, Express js, MongoDB</b></a></h3>
-                <p class="card-description">
-                  Build a responsive fully functional E-commerce application that allows the Admin to save,retrieve and delete data like products, orders and the buyers to select items, save shopping carts and complete payment.
-                </p>
-              </div>
-              <div class="card-footer">
-                <div class="post-author">
-                  <a href="#">
-                    <img src="assets/img/hitesh.jpeg" alt="" class="avatar rounded-circle">
-                    <span class="author">Hiteshwarm Dubey</span>
-                  </a>
-                </div>
-                
-              </div>
-            </div>
-          </div>
-          <div class="col-md-4">
-            <div class="card card-blog">
-              <div class="card-img">
-                <a href="https://github.com/hitesh2710/Instagram-Reels-Clone"><img src="assets/img/insta.png" alt="" class="img-fluid" style="width: 100%;height: 200px;"></a>
-              </div>
-              <div class="card-body">
-                <div class="card-category-box">
-                  <div class="card-category">
-                    <h6 class="category">Instagram-Reels-Clone</h6>
-                  </div>
-                </div>
-                <h3 class="card-title"><a href="https://github.com/hitesh2710/Instagram-Reels-Clone"><b>React js, Firebase</b></a></h3>
-                <p class="card-description">
-                  Created a platform where users can enjoy, like, comment, upload reels, and track their profiles. Designed and executed login page with firebase authentication for full login functionality.
-                  Utilized Firebase for real-time database storage of reals for logged-in users.
-                </p>
-              </div>
-              <div class="card-footer">
-                <div class="post-author">
-                  <a href="#">
-                    <img src="assets/img/hitesh.jpeg" alt="" class="avatar rounded-circle">
-                    <span class="author">Hiteshwarm Dubey</span>
-                  </a>
-                </div>
-                
-              </div>
-            </div>
-          </div>
-          <div class="col-md-4">
-            <div class="card card-blog">
-              <div class="card-img">
-                <a href="https://github.com/hitesh2710/Open-Board"><img src="assets/img/openboard.png" alt="" class="img-fluid" style="width: 100%;height: 200px;"></a>
-              </div>
-              <div class="card-body">
-                <div class="card-category-box">
-                  <div class="card-category">
-                    <h6 class="category">Open Board</h6>
-                  </div>
-                </div>
-                <h3 class="card-title"><a href="https://github.com/hitesh2710/Open-Board"><b> Canvas API, Express.js, Node.js, and Socket-io</b></a></h3>
-                <p class="card-description">
-                  Created Interactive whiteboard designed to be used in schools and universities.
-                </br>
-                  Enabled real-time editing through Socket-io.
-                  Used Canvas API for the graphical drawing.
-                </br>
-              </br>
-
-                </p>
-
-              </div>
-              <div class="card-footer">
-                <div class="post-author">
-                  <a href="#">
-                    <img src="assets/img/hitesh.jpeg" alt="" class="avatar rounded-circle">
-                    <span class="author">Hiteshwarm Dubey</span>
-                  </a>
-                </div>
-                
-              </div>
-            </div>
-          </div>
-          
-        </div>
-      </div>
-    </section><!-- End Blog Section -->
-
-    <!-- ======= Contact Section ======= -->
-    <section id="contact" class="paralax-mf footer-paralax bg-image sect-mt4 route" style="background-image: url(assets/img/overlay-bg.jpg)">
-      <div class="container">
-        <div class="row">
-          <div class="col-sm-12">
-            <div class="contact-mf">
-              <div id="contact" class="box-shadow-full">
-                <div class="row">
-                  <!-- <div class="col-md-5" style="display: flex; align-items: center; justify-content: center;">
-                    <img src="./assets/img/hitesh.jpeg" style="height: 180px; width: 180px; border-radius: 50%">
-                  </div> -->
-                  <div  >
-                    <div class="title-box-2 pt-4 pt-md-0">
-                      <h5 class="title-left">
-                        Get in Touch
-                      </h5>
-                    </div>
-                    <div class="more-info">
-                      <p class="lead">
-                        Building scalable systems & seamless user experiences. Let's connect and create something amazing!
-                      </p>
-                      <ul class="list-ico">
-                        <li><span class="bi bi-geo-alt"></span>Ghaziabad, Uttar Pradesh-201309</li>
-                        <li><a href="mailto:anand2710dubey@gmail.com"><span class="bi bi-envelope"></span>anand2710dubey@gmail.com</a></li>
-                        <li><a href="tel:+91 9310547634">📱 +91 9310547634</a></li>
-                      </ul>
-                    </div>
-                    <div class="socials">
-                      <ul>
-                        <li><a href="https://www.linkedin.com/in/hiteshwarm-dubey-2240b3213/"><span class="ico-circle"><i class="bi bi-linkedin"></i></span></a></li>
-                        <li><a href="https://github.com/hitesh2710"><span class="ico-circle"><i class="bi bi-github"></i></span></a></li>
-                        <li><a href="#"><span class="ico-circle"><i class="bi bi-instagram"></i></span></a></li>
-                      </ul>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section><!-- End Contact Section -->
-
-  </main><!-- End #main -->
-
-  <!-- ======= Footer ======= -->
-  <footer>
-    <div class="container">
-      <div class="row">
-        <div class="col-sm-12">
-          <div class="copyright-box">
-            <p class="copyright">&copy; Copyright <strong></strong>. All Rights Reserved</p>
-            <div class="credits">
-              Designed by Hiteshwarm Dubey
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </footer><!-- End  Footer -->
-
-  <div id="preloader"></div>
-  <a href="#" class="back-to-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
-
-  <!-- Vendor JS Files -->
-  <script src="assets/vendor/purecounter/purecounter_vanilla.js"></script>
-  <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
-  <script src="assets/vendor/glightbox/js/glightbox.min.js"></script>
-  <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
-  <script src="assets/vendor/typed.js/typed.min.js"></script>
-  <script src="assets/vendor/php-email-form/validate.js"></script>
-
-  <!-- Template Main JS File -->
-  <script src="assets/js/main.js"></script>
-
+  <script src="assets/js/modern.js" defer></script>
 </body>
-
 </html>
